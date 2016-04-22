@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dropDown</title>
+    <link rel="stylesheet" href="./../../css/comm.css" />
+    <link rel="stylesheet" href="./css/myDropDown.css" />
+    <style type="text/css">
+    .myDropText {
+        font-size: 12px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="bs-docs-header">
+        <h1>dropDown</h1>
+        <p>下拉的样式</p>
+    </div>
+    <div class="content">
+        <h1>下拉列表</h1>
+        <div class="exercise">
+            <div class="result">
+                <div class="text">实例：</div>
+                <div class="myDropDown specialitiesOption">
+                    <span class="myDropText">
+                        <span>专业：</span> <span class="text">土建</span> <i class="myDropArrorw"></i> </span>
+                    <ul class="myDropList" style="display: none;">
+                        <li class="myItem">土建</li>
+                        <li class="myItem">通风空调</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="code">
+                html:
+                <br/>
+                <br/>
+                <pre>
+ &lt;div class="myDropDown specialitiesOption">
+    &lt;span class="myDropText">
+        &lt;span>专业：</span>
+         &lt;span class="text">土建</span> 
+         &lt;i class="myDropArrorw"></i> </span>
+    &lt;ul class="myDropList" style="display: none;">
+        &lt;li class="myItem">土建</li>
+        &lt;li class="myItem">通风空调</li>
+    &lt;/ul>
+&lt;/div> 
+
+</pre> js:
+                <br/>
+                <br/>
+                <pre>
+$(".specialitiesOption").myDropDown({
+    zIndex:9,
+    click:function($item){
+        alert($item.text());
+    } 
+}); 
+</pre>
+            </div>
+            <h1>dropDown</h1>
+            <p>下拉的样式</p>
+        </div>
+        <div class="content">
+            <h1>下拉列表二级</h1>
+            <div class="exercise">
+                <div class="result">
+                    <div class="text">实例：</div>
+                    <div class="myDropDown specialitiesOption">
+                        <span class="myDropText">
+                        <span>专业：</span> <span class="text">土建</span> <i class="myDropArrorw"></i> </span>
+                        <ul class="myDropList" style="display: none;">
+                            <li class="myItemGroup"><span>建筑</span></li>
+                            <ul class="groups">
+                                <li class="myItem">楼梯.rvt</li>
+                                <li class="myItem">踢脚线.rvt</li>
+                                <li class="myItem">外立面.rvt</li>
+                            </ul>
+                            <li class="myItemGroup"><span>暖通</span></li>
+                            <ul class="groups">
+                                <li class="myItem">F03.rvt</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code">
+                    html:
+                    <br/>
+                    <br/>
+                    <pre>
+&lt;div class="myDropDown specialitiesOption">
+    &lt;span class="myDropText">
+    &lt;span>专业：</span> 
+    &lt;span class="text">土建</span>
+     &lt;i class="myDropArrorw"></i> </span>
+    &lt;ul class="myDropList" style="display: none;">
+        &lt;li class="myItemGroup"><span>建筑</span></li>
+        &lt;ul class="groups">
+            &lt;li class="myItem">楼梯.rvt</li>
+            &lt;li class="myItem">踢脚线.rvt</li>
+            &lt;li class="myItem">外立面.rvt</li>
+        &lt;/ul>
+        &lt;li class="myItemGroup"><span>暖通</span></li>
+        &lt;ul class="groups">
+            &lt;li class="myItem">F03.rvt</li>
+        &lt;/ul>
+    &lt;/ul>
+&lt;/div>
+
+</pre> js:
+                    <br/>
+                    <br/>
+                    <pre>
+$(".specialitiesOption").myDropDown({
+    zIndex:9,
+    click:function($item){
+        alert($item.text());
+    } 
+}); 
+</pre>
+                </div>
+            </div>
+            <script type="text/javascript" src="../../js/jquery-1.12.0.min.js"></script>
+            <script type="text/javascript" src="./js/myDropDown.js"></script>
+            <script type="text/javascript">
+            $(".specialitiesOption").myDropDown({
+                zIndex: 9,
+                click: function($item) {
+                    alert($item.text());
+                }
+            });
+            </script>
+</body>
+
+</html>

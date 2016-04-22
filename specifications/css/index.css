@@ -55,8 +55,10 @@ a:hover {
 	text-decoration: none;
 }
 
- #slideBar .summarySub{padding-left: 20px;}
-
+ #slideBar .summarySub{padding-left: 20px;display: none;}
+ #slideBar li:hover .summarySub{
+ 	display: block;
+ }
 #ifContainer{
 	border: 0;
 	width: 100%;

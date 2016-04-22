@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>radio</title>
+    <link rel="stylesheet" href="./../../css/comm.css" />
+    <link rel="stylesheet" href="./../../css/components.css" />
+    <style type="text/css">
+    		.btnCk{
+    			font-size: 12px;
+    		}
+    </style>
+</head>
+
+<body>
+    <div class="bs-docs-header">
+        <h1>Checkbox</h1>
+        <p>单选按钮的样式</p>
+    </div>
+    <div class="content">
+        <h1>单选按钮</h1>
+        <div class="exercise">
+            <div class="result">
+                <div class="text">实例：</div>
+                <span class="groupRadio">
+                    <label class="btnRadio">篮球</label> 
+                    <label class="btnRadio">足球</label> 
+                     <label class="btnRadio">球球</label> 
+                </span>
+                
+            </div>
+            <div class="code">
+            	html:<br/><br/>
+
+                &lt;span class="groupRadio">
+                    &lt;label class="btnRadio">篮球</label> 
+                    &lt;label class="btnRadio">足球</label> 
+                     &lt;label class="btnRadio">球球</label> 
+                 &lt;/span><br/><br/>
+
+                js:<br/><br/>
+<pre>
+$(".groupRadio").myRadioCk({
+	click:function(){
+		alert($(this).find(".selected").text());
+	}
+});
+</pre>
+            </div>
+
+
+             <h1>单选按钮禁用</h1>
+        <div class="exercise">
+            <div class="result">
+                <div class="text">实例：</div>
+                <span class="groupRadio">
+                    <label class="btnRadio disable">篮球</label> 
+                    <label class="btnRadio">足球</label> 
+                     <label class="btnRadio">球球</label> 
+                </span>
+                
+            </div>
+            <div class="code">
+                html:<br/><br/>
+
+                 &lt;span class="groupRadio">
+                    &lt;label class="btnRadio disable">篮球</label> 
+                    &lt;label class="btnRadio">足球</label> 
+                     &lt;label class="btnRadio">球球</label> 
+                 &lt;/span><br/><br/>
+
+                js:<br/><br/>
+<pre>
+$(".groupRadio").myRadioCk({
+    click:function(){
+        alert($(this).find(".selected").text());
+    }
+});
+</pre>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./js/myRadioCk.js"></script>
+    <script type="text/javascript">
+    	 
+    	$(".groupRadio").myRadioCk({
+    		click:function(){
+    			 alert($(this).find(".selected").text());
+    		}
+    	});
+
+    </script>
+</body>
+
+</html>

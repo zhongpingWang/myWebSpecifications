@@ -220,3 +220,51 @@ h2 {
   padding: 15px;
   color: #d44950;
 }
+
+[class^="myIcon-"],
+[class*="myIcon-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  background: url(../images/comm/images/commIcon.png) no-repeat;
+}
+.myIcon-createFolder {
+  background-position: 0px -338px;
+}
+.myIcon-upload {
+  background-position: 0px -280px;
+}
+.myIcon-download {
+  background-position: 0px -299px;
+}
+.myIcon-del {
+  background-position: 0px -360px;
+}
+.myIcon-enter {
+  background-position: 0px -380px;
+}
+.myIcon-cancel {
+  background-position: 0px -400px;
+}
+.myIcon-slanting-right {
+  background-position: 0px -213px;
+}
+.myIcon-search {
+  background-position: 0px -480px;
+}
+
+.section{
+  border:1px #ccc solid;
+   padding:30px;
+}
+.section h1{
+      color: #2a2a2a;
+      font-size: 40px;
+
+}
+.section p{
+      padding:10px 0px;
+
+}
